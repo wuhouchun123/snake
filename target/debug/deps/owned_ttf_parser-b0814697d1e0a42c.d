@@ -1,0 +1,8 @@
+/Users/dorunto/Desktop/项目/我的实战/Rust/snake/target/debug/deps/owned_ttf_parser-b0814697d1e0a42c.rmeta: /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/lib.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/convert.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/owned.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/preparse.rs
+
+/Users/dorunto/Desktop/项目/我的实战/Rust/snake/target/debug/deps/owned_ttf_parser-b0814697d1e0a42c.d: /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/lib.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/convert.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/owned.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/preparse.rs
+
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/lib.rs:
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/convert.rs:
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/owned.rs:
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/owned_ttf_parser-0.15.2/src/preparse.rs:
