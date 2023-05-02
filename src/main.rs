@@ -2,8 +2,8 @@ extern crate piston_window;
 extern crate rand;
 
 mod draw;
-mod snake; 
+mod snake;
 
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, world!123456");
 }
