@@ -1,0 +1,10 @@
+/Users/dorunto/Desktop/项目/我的实战/Rust/snake/target/debug/deps/rusttype-ab991d46a94fd0aa.rmeta: /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/lib.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/font.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/geometry.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/outliner.rs
+
+/Users/dorunto/Desktop/项目/我的实战/Rust/snake/target/debug/deps/librusttype-ab991d46a94fd0aa.rlib: /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/lib.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/font.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/geometry.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/outliner.rs
+
+/Users/dorunto/Desktop/项目/我的实战/Rust/snake/target/debug/deps/rusttype-ab991d46a94fd0aa.d: /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/lib.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/font.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/geometry.rs /Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/outliner.rs
+
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/lib.rs:
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/font.rs:
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/geometry.rs:
+/Users/dorunto/.cargo/registry/src/mirrors.tuna.tsinghua.edu.cn-df7c3c540f42cdbd/rusttype-0.9.3/src/outliner.rs:

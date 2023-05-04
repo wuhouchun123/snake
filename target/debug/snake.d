@@ -1,0 +1,1 @@
+/Users/dorunto/Desktop/项目/我的实战/Rust/snake/target/debug/snake: /Users/dorunto/Desktop/项目/我的实战/Rust/snake/src/draw.rs /Users/dorunto/Desktop/项目/我的实战/Rust/snake/src/main.rs /Users/dorunto/Desktop/项目/我的实战/Rust/snake/src/snake.rs
