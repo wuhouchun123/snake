@@ -4,11 +4,13 @@ extern crate piston_window;
 extern crate rand;
 
 mod draw;
+mod game;
 mod snake;
 
 use piston_window::types::Color;
 use piston_window::*;
 
+use crate::game::Game;
 use crate::snake::Snake;
 
 const BACK_COLOR: Color = [0.5, 0.5, 0.5, 1.0];
@@ -19,6 +21,7 @@ fn main() {
         .exit_on_esc(true)
         .build()
         .unwrap();
+    let mut game = Game::new(width, height);
     while let Some(event) = window.next() {
         // 监听按键事件
         if let Some(Button::Keyboard(key)) = event.press_args() {
@@ -28,14 +31,12 @@ fn main() {
         // 绘制界面
         window.draw_2d(&event, |c, g, _| {
             clear(BACK_COLOR, g); // ???
-                                  // game.draw(&c, g);
-            let snake = Snake::new(3, 3);
-            snake.draw(&c, g);
+            game.draw(&c, g);
         });
 
         // 更新界面
         event.update(|arg| {
-            // game.update();
+            game.update(arg.dt);
         });
     }
 }
