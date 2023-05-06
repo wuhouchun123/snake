@@ -53,6 +53,10 @@ impl Snake {
         (head_block.x, head_block.y)
     }
 
+    pub fn head_direction(&self) -> Direction {
+        self.direction
+    }
+
     // 蛇移动
     pub fn move_forward(&mut self, dir: Option<Direction>) {
         match dir {
@@ -85,6 +89,7 @@ impl Snake {
         // 尾部删除block
         let removed_block = self.body.pop_back().unwrap();
         self.tail = Some(removed_block); //???
+        
     }
 
     // 下一个头部的位置

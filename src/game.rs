@@ -20,6 +20,7 @@ pub struct Game {
     food_x: i32,
     food_y: i32,
     waiting_time: f64,
+    game_over: bool,
 }
 
 impl Game {
@@ -33,6 +34,7 @@ impl Game {
             food_x: 10,
             food_y: 12,
             waiting_time: 0.00,
+            game_over: false,
         }
     }
 
@@ -50,15 +52,42 @@ impl Game {
         if self.food_exist {
             draw_block(FOOD_COLOR, self.food_x, self.food_y, con, g);
         }
+
+        if self.game_over {
+            draw_rectangle(GAMEOVER_COLOR, 0, 0, self.width, self.height, con, g);
+        }
     }
 
     pub fn update(&mut self, delta_time: f64) {
         self.waiting_time += delta_time;
         if self.waiting_time > MOVING_PERIOD {
-            self.snake.move_forward(Some(Direction::Right));
-            self.waiting_time = 0.00;
+            self.update_snake(None);
         }
     }
 
-    pub fn pressed_key(&self) {}
+    pub fn pressed_key(&mut self, key: Key) {
+        let dir = match key {
+            Key::Up => Some(Direction::Top),
+            Key::Down => Some(Direction::Bottom),
+            Key::Left => Some(Direction::Left),
+            Key::Right => Some(Direction::Right),
+            _ => Some(self.snake.head_direction()),
+        };
+
+        self.update_snake(dir);
+    }
+
+    fn update_snake(&mut self, dir: Option<Direction>) {
+        if self.check_if_snake_alive(dir) {
+            self.snake.move_forward(dir);
+            self.waiting_time = 0.0;
+        } else {
+            self.game_over = true;
+        }
+    }
+
+    fn check_if_snake_alive(&self, dir: Option<Direction>) -> bool {
+        let (next_x, next_y): (i32, i32) = self.snake.next_head(dir);
+        next_x > 0 && next_x < self.width - 1 && next_y > 0 && next_y < self.height - 1
+    }
 }

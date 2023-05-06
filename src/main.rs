@@ -25,7 +25,7 @@ fn main() {
     while let Some(event) = window.next() {
         // 监听按键事件
         if let Some(Button::Keyboard(key)) = event.press_args() {
-            //
+            game.pressed_key(key);
         }
 
         // 绘制界面
