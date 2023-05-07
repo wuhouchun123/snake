@@ -6,7 +6,7 @@ use crate::draw::draw_block;
 
 const SNAKE_COLOR: Color = [0.00, 0.80, 0.00, 1.0];
 
-#[derive(Clone, Copy)]
+#[derive(Copy, Clone, PartialEq, Debug)]
 pub enum Direction {
     Top,
     Bottom,
@@ -14,6 +14,18 @@ pub enum Direction {
     Right,
 }
 
+impl Direction {
+    pub fn opposite(&self) -> Direction {
+        match *self {
+            Direction::Top => Direction::Bottom,
+            Direction::Bottom => Direction::Top,
+            Direction::Left => Direction::Right,
+            Direction::Right => Direction::Left,
+        }
+    }
+}
+
+#[derive(Debug, Clone)]
 struct Block {
     x: i32,
     y: i32,
@@ -51,6 +63,10 @@ impl Snake {
     pub fn head_position(&self) -> (i32, i32) {
         let head_block = self.body.front().unwrap();
         (head_block.x, head_block.y)
+    }
+
+    pub fn head_direction(&self) -> Direction {
+        self.direction
     }
 
     // 蛇移动
@@ -95,11 +111,31 @@ impl Snake {
             Some(d) => moving_dir = d,
             None => {}
         }
-        match self.direction {
+        match moving_dir {
             Direction::Bottom => (head_x, head_y + 1),
             Direction::Top => (head_x, head_y - 1),
             Direction::Left => (head_x - 1, head_y),
             Direction::Right => (head_x + 1, head_y),
         }
+    }
+
+    // 尾部增加block
+    pub fn restore_tail(&mut self, x: i32, y: i32) {
+        let new_block = Block { x, y };
+        self.body.push_back(new_block);
+    }
+
+    pub fn overlap_tail(&mut self, x: i32, y: i32) -> bool {
+        let mut ch = 0;
+        for block in &self.body {
+            if block.x == x && block.y == y {
+                return true;
+            };
+            ch += 1;
+            if ch == self.body.len() - 1 {
+                break;
+            };
+        }
+        return false;
     }
 }
