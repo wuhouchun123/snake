@@ -25,12 +25,12 @@ fn main() {
     while let Some(event) = window.next() {
         // 监听按键事件
         if let Some(Button::Keyboard(key)) = event.press_args() {
-            //
+            game.pressed_key(key);
         }
 
         // 绘制界面
         window.draw_2d(&event, |c, g, _| {
-            clear(BACK_COLOR, g); // ???
+            clear(BACK_COLOR, g); // ???，是清空原来界面的操作
             game.draw(&c, g);
         });
 
